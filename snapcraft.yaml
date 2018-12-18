@@ -80,7 +80,8 @@ parts:
   portal-test:
     after: [desktop-gnome-platform]
     plugin: meson
-    source: https://github.com/matthiasclasen/portal-test.git
+    source: https://github.com/kenvandine/portal-test.git
+    source-branch: snap
     meson-parameters:
       - --prefix=/
 
