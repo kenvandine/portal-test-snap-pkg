@@ -52,8 +52,9 @@ apps:
 
 parts:
   glib:
-    source: https://gitlab.gnome.org/GNOME/glib.git
-    #source-branch: glib-2-56
+    #source: https://gitlab.gnome.org/GNOME/glib.git
+    source: https://gitlab.gnome.org/jamesh/glib.git
+    source-branch: portals-no-o-path
     configflags: [ --prefix=/usr ]
     plugin: autotools
     build-packages:
@@ -84,7 +85,6 @@ parts:
     source-branch: snap
     meson-parameters:
       - --prefix=/
-
     build-packages:
       - gcc
       - libgstreamer-plugins-base1.0-dev
